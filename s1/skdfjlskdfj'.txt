@@ -1,0 +1,10 @@
+type="button"
+    </head><body><div class="center">
+      <h1>hello, traveler!</h1>
+    </div>
+    <div>
+      <img src="https://cdn.discordapp.com/attachments/924284522881749043/924760401550405632/2021-12-26_23-27-06.png" alt="Italian Trulli">
+      <p><font size="5" color="red" face="Arial">WARNING! THE WEB IS STILL DEVELOPING.</font></p>
+    </div>
+    
+	
