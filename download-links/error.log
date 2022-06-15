@@ -1,0 +1,29 @@
+            Running setup.py install for pyaudio ... error
+            ERROR: Command errored out with exit status 1:
+             command: 'C:\Python39\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\logki\\AppData\\Local\\Temp\\pip-install-xaqc5mo1\\pyaudio_ea01c73b9e524bb48c53a232eb55e55e\\setup.py'"'"'; __file__='"'"'C:\\Users\\logki\\AppData\\Local\\Temp\\pip-install-xaqc5mo1\\pyaudio_ea01c73b9e524bb48c53a232eb55e55e\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\logki\AppData\Local\Temp\pip-record-yp_a_okd\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Python39\Include\pyaudio'
+                 cwd: C:\Users\logki\AppData\Local\Temp\pip-install-xaqc5mo1\pyaudio_ea01c73b9e524bb48c53a232eb55e55e\
+    
+            Complete output (17 lines):
+            running install
+            running build
+            running build_py
+            creating build
+            creating build\lib.win-amd64-3.9
+            copying src\pyaudio.py -> build\lib.win-amd64-3.9
+            running build_ext
+            building '_portaudio' extension
+            creating build\temp.win-amd64-3.9
+            creating build\temp.win-amd64-3.9\Release
+            creating build\temp.win-amd64-3.9\Release\src
+            C:\Program Files\Microsoft Visual 
+    
+    Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\HostX86\x64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -DMS_WIN64=1 -IC:\Python39\include -IC:\Python39\include -IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\ATLMFC\include -IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include -IC:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um -IC:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\shared -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\um -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\winrt -IC:\Program Files (x86)\Windows Kits\10\\include\10.0.19041.0\\cppwinrt /Tcsrc/_portaudiomodule.c /Fobuild\temp.win-amd64-3.9\Release\src/_portaudiomodule.obj
+            _portaudiomodule.c
+            C:\Python39\include\pyconfig.h(117): warning C4005: MS_WIN64: Ё§¬Ґ­Ґ­ЁҐ ¬ Єа®®ЇаҐ¤Ґ«Ґ­Ёп
+            src/_portaudiomodule.c: note: б¬. ЇаҐ¤л¤гйҐҐ ®ЇаҐ¤Ґ«Ґ­ЁҐ "MS_WIN64"
+            src/_portaudiomodule.c(29): fatal error C1083: ЌҐ г¤ Ґвбп ®вЄалвм д ©« ўЄ«озҐ­ЁҐ: portaudio.h: No such file or directory,
+            error: command 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX86\\x64\\cl.exe' failed with exit code 2
+    
+            ----------------------------------------
+    
+        ERROR: Command errored out with exit status 1: 'C:\Python39\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\logki\\AppData\\Local\\Temp\\pip-install-xaqc5mo1\\pyaudio_ea01c73b9e524bb48c53a232eb55e55e\\setup.py'"'"'; __file__='"'"'C:\\Users\\logki\\AppData\\Local\\Temp\\pip-install-xaqc5mo1\\pyaudio_ea01c73b9e524bb48c53a232eb55e55e\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\logki\AppData\Local\Temp\pip-record-yp_a_okd\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Python39\Include\pyaudio' Check the logs for full command output.
