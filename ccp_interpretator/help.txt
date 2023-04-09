@@ -1,0 +1,44 @@
+Press X to close this window.
+This is the PPC Manual.
+
+COMMANDS:
+	store [address] [str/int] [value]
+	  Stores the value in dest. address
+	  address - 0...100 value
+	  str/int - type of value
+	  value   - the value itself to store
+	read [address]
+	  Reads the value from address and loads to CRI/CRS register
+	  address - 0...100 value
+	print [any]
+	  Prints the value in the command line.
+	reload/restart
+	  Resets the PPC machine.
+	help
+	  Displays this file.
+	parser
+	  CCP machine MANIFACTUER and VERSION info (see source code)
+	calculate [str]
+	  Calculates the value in str argument.
+	  Supported (eval) flags are %i; and $s;
+          Outputing result in CRI
+	jmp [addr]
+	  Jumps on the address
+	if [n1, if CRI>0] [n2, if CRI=<0] [str]
+	  CRI equals to calculated/evaluated str
+	  Jumps on the address n1 if CRI is bigger than zero
+	  If it equals zero or smaller, it jumps on the address n2
+	rprint [any]
+	  Raw printing (v1.1)
+	  Does not leaves \n after
+
+FLAGS
+	$s; - input string
+	$i; - input integer (number)
+	%s; - CR string
+	%i; - CR integer (number)
+EVAL FLAGS
+	ins - RAM (list of numbers and strings)
+	  Use ins[addr] to get value from ram
+
+	  
