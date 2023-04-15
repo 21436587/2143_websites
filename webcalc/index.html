@@ -1,0 +1,35 @@
+<body>
+    <canvas width="512" height="512" id="CAN"></canvas>
+    <br>This is an Progcalc ported to HTML. Note: this can be really slow because of no optimizations in code. if you in the mobile mode and you're in Chrome, turn on mode 'for computers'</br>
+    <input id="vte"></input><button id="calc" onclick="calc();">Calculate</button>
+    <script>
+    var canvas =             document.getElementById("CAN");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, 1024, 1024);
+    ctx.fillStyle = "#FFFFFF";
+    function calc(){
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, 1024, 1024);
+        ctx.fillStyle = "#FFFFFF";
+        console.log("calculatint"); document.getElementById("calc").innerHTML="Calculating...";
+        let t = 0;
+        let d = document.getElementById("vte").value
+        console.log(d);
+        for(let y=0;y!=512;y++){
+            for(let x=0;x!=512;x++){
+                if((eval(d)%2)-1==-1){
+                    ctx.fillStyle = "#FFFFFF";
+                } else if((eval(d)%2)-1==0){
+                    ctx.fillStyle = "#000000";
+                }
+                ctx.fillRect(x, y, x+2, y+2);
+                
+                t++;
+            }
+        }  
+        console.log("done"); document.getElementById("calc").innerHTML="Calculate";
+    }
+    </script>
+    
+</body>
